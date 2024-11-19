@@ -1,12 +1,12 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Giuseppe',
+    lastName:  'Marchio',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Ingegnere Informatico',
     avatar:    '/images/avatar.jpg',
     location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/giuxeppe',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/giuseppe-marchio/',
     },
     {
         name: 'X',
@@ -46,9 +46,9 @@ const social = [
 const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
+    headline: <>${person.name} - ${person.role}</>,
+    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA</InlineCode>.</>
 }
 
 const about = {
