@@ -47,13 +47,14 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
+    avatar: {display: true},
     headline: <>{person.name} - {person.role}</>,
-    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA</InlineCode>.</>
+    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERISTY OF ROME</InlineCode>.</>
 }
 
 const about = {
     label: 'About',
-    title: 'About me',
+    title: `${person.name} - About me`,
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
@@ -68,7 +69,7 @@ const about = {
     },
     intro: {
         display: true,
-        title: 'Introduction',
+        title: 'Introduzione',
         description: <>Sono uno studente di Ingegneria Informatica con la passione della tecnologia, del web e del mondo IT. Ho sviluppato diversi progetti scritti in linguaggi moderni.</>
     },
     work: {
@@ -91,16 +92,6 @@ const about = {
                         height: 9
                     }
                 ]
-            },
-            {
-                company: '',
-                timeframe: 'XXXX - XXXX',
-                role: 'XXXX Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
             }
         ]
     },
