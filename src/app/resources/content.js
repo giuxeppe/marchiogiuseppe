@@ -47,9 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
-    avatar: {display: true},
     headline: <>{person.name} - {person.role}</>,
-    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERISTY OF ROME</InlineCode>.</>
+    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERSITY OF ROME</InlineCode>.</>
 }
 
 const about = {
@@ -101,8 +100,11 @@ const about = {
         institutions: [
             {
                 name: 'Università degli Studi di Roma "Sapienza"',
-                description: <>Ingegneria Informatica e Automatica</>,
-                timeframe: '2021 - Present'
+                description: <>Laurea triennale in Ingegneria Informatica e Automatica - Votazione ***/110</>,
+            },
+            {
+                name: 'Istituto Tecnico Industriale "E. Scalfaro" - Catanzaro',
+                description: <>Diploma in Informatica - Votazione 100/100</>,
             }
         ]
     },
