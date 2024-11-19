@@ -10,7 +10,7 @@ const createI18nContent = (t) => {
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
         location:  'Europe/Italy',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['Italian', 'Italiano']  // optional: Leave the array empty if you don't want to display languages
+        languages: ['Italian', 'English']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -73,7 +73,7 @@ const createI18nContent = (t) => {
             description: <>{t("about.intro.description")}</>
         },
         work: {
-            display: true, // set to false to hide this section
+            display: false, // set to false to hide this section
             title: t("about.work.title"),
             experiences: [
                 {
@@ -104,17 +104,14 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
-                },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'Università degli Studi di Roma "Sapienza"',
+                    description: <>Ingegneria Informatica e Automatica</>,
+                    timeframe: '2021 - Present'
                 }
             ]
         },
         technical: {
-            display: true, // set to false to hide this section
+            display: false, // set to false to hide this section
             title: t("about.technical.title"),
             skills: [
                 {

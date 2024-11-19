@@ -8,8 +8,8 @@ const person = {
     },
     role:      'Ingegnere Informatico',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Europe/Italy',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['Italian', 'English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -47,7 +47,7 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
-    headline: <>${person.name} - ${person.role}</>,
+    headline: <>{person.name} - {person.role}</>,
     subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA</InlineCode>.</>
 }
 
@@ -63,22 +63,22 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Sono uno studente di Ingegneria Informatica con la passione della tecnologia, del web e del mondo IT. Ho sviluppato diversi progetti scritti in linguaggi moderni.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: '',
+                timeframe: 'XXXX - Present',
+                role: 'XXXX Design Engineer',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
@@ -93,9 +93,9 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: '',
+                timeframe: 'XXXX - XXXX',
+                role: 'XXXX Designer',
                 achievements: [
                     <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
@@ -106,20 +106,17 @@ const about = {
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Studi',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Università degli Studi di Roma "Sapienza"',
+                description: <>Ingegneria Informatica e Automatica</>,
+                timeframe: '2021 - Present'
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
