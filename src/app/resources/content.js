@@ -22,6 +22,16 @@ const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
     {
+        name: 'Facebook',
+        icon: 'facebook',
+        link: 'https://www.facebook.com/giuseppe.marchioo/',
+    },
+    {
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://www.instagram.com/giuseppe_marchio/',
+    },
+    {
         name: 'GitHub',
         icon: 'github',
         link: 'https://github.com/giuxeppe',
