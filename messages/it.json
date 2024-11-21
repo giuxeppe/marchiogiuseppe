@@ -31,12 +31,7 @@
         "studies": {
             "title": "Studi",
             "institutions": {
-                "Università degli Studi di Roma 'Sapienza'": {
-                    "description": "Laurea triennale in Ingegneria Informatica e Automatica - Votazione ***/110"
-                },
-                "Istituto Tecnico Industriale 'E. Scalfaro' - Catanzaro": {
-                    "description": "Diploma in Informatica - Votazione 100/100"
-                }
+
             }
         },
         "technical": {
@@ -52,12 +47,12 @@
         "description": "Leggi cosa {name} ha appena scritto sul suo blog"
     },
     "work": {
-        "label": "Lavori",
+        "label": "Progetti",
         "title": "I miei progetti",
         "description": "Progetti di {name}"
     },
     "gallery": {
-        "label": "Galleria",
+        "label": "Gallery",
         "title": "La mia galleria fotografica",
         "description": "Una collezione di foto di {name}"
     },

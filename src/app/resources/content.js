@@ -14,8 +14,8 @@ const person = {
 
 const newsletter = {
     display: false,
-    title: <>Iscriviti alla Newsletter di {person.firstName}</>,
-    description: <>Di solito scrivo qualcosa sulla tecnologia.</>
+    title: <>Subscribe to {person.firstName}'s Newsletter</>,
+    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
 
 const social = [
@@ -64,7 +64,7 @@ const home = {
 const about = {
     label: 'Chi sono',
     title: `${person.name} - Chi sono`,
-    description: `Conosci ${person.name}, ${person.role} da ${person.location}`,
+    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: false
@@ -83,7 +83,7 @@ const about = {
     },
     work: {
         display: false, // set to false to hide this section
-        title: 'Esperienze lavorative',
+        title: 'Work Experience',
         experiences: [
             {
                 company: '',
@@ -159,7 +159,7 @@ const about = {
 const blog = {
     label: 'Blog',
     title: `${person.name} - Blog`,
-    description: `Leggi cosa ${person.name} ha appena scritto`,
+    description: `Read what ${person.name} has been up to recently`
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
@@ -167,15 +167,15 @@ const blog = {
 const work = {
     label: 'Progetti',
     title: `${person.name} - Progetti`,
-    description: `Progetti di ${person.name}`
+    description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 }
 
 const gallery = {
     label: 'Galleria',
-    title: `${person.name} - Galleria`,
-    description: `Una collezione fotografica di ${person.name}`,
+    title: `${person.name} - Galleria Fotografica`,
+    description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
         { 
