@@ -45,6 +45,7 @@ export default function About(
     const t = useTranslations();
     const {person, about, social } = renderContent(t);
     const structure = [
+        // { title: 'Introduction', display: about.intro.display, items: [] },
         { 
             title: about.intro.title,
             display: about.intro.display,

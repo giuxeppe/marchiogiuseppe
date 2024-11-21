@@ -14,8 +14,8 @@ const person = {
 
 const newsletter = {
     display: false,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Iscriviti alla Newsletter di {person.firstName}</>,
+    description: <>Di solito scrivo qualcosa sulla tecnologia.</>
 }
 
 const social = [
@@ -58,16 +58,16 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
     headline: <>{person.name} - {person.role}</>,
-    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERSITY OF ROME</InlineCode>.</>
+    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERSITA' DI ROMA</InlineCode>.</>
 }
 
 const about = {
-    label: 'About',
-    title: `${person.name} - About me`,
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    label: 'Chi sono',
+    title: `${person.name} - Chi sono`,
+    description: `Conosci ${person.name}, ${person.role} da ${person.location}`,
     tableOfContent: {
         display: true,
-        subItems: true
+        subItems: false
     },
     avatar: {
         display: true
@@ -83,7 +83,7 @@ const about = {
     },
     work: {
         display: false, // set to false to hide this section
-        title: 'Work Experience',
+        title: 'Esperienze lavorative',
         experiences: [
             {
                 company: '',
@@ -158,24 +158,24 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
+    title: `${person.name} - Blog`,
+    description: `Leggi cosa ${person.name} ha appena scritto`,
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
 
 const work = {
-    label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
+    label: 'Progetti',
+    title: `${person.name} - Progetti`,
+    description: `Progetti di ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 }
 
 const gallery = {
-    label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
+    label: 'Galleria',
+    title: `${person.name} - Galleria`,
+    description: `Una collezione fotografica di ${person.name}`,
     // Images from https://pexels.com
     images: [
         { 
