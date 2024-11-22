@@ -11,9 +11,10 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
-  webpack(config, { isServer }) {
-    if (!isServer) {
-      config.devtool = 'source-map'; // Abilita la generazione della source map
+  webpack(config, { dev, isServer }) {
+    if (!dev && !isServer) {
+      // Abilita la generazione delle source map solo in produzione lato client
+      config.devtool = 'source-map';
     }
     return config;
   },
