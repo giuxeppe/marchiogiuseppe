@@ -158,7 +158,7 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: `${person.name} - Blog`,
+    title: 'Writing about design and tech...',
     description: `Read what ${person.name} has been up to recently`
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
@@ -173,8 +173,8 @@ const work = {
 }
 
 const gallery = {
-    label: 'Galleria',
-    title: `${person.name} - Galleria Fotografica`,
+    label: 'Gallery',
+    title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [

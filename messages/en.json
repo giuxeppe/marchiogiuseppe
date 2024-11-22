@@ -16,7 +16,7 @@
     },
     "about": {
         "label": "About",
-        "title": "About me",
+        "title": "Chi sono",
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",
@@ -76,6 +76,6 @@
         "description": "A photo collection by {name}"
     },
     "projectCard": {
-        "label": "Read Case Study"
+        "label": "Leggi di più"
     }
 }
