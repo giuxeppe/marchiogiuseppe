@@ -121,16 +121,18 @@ export default function About(
                                 name="globe"/>
                             {person.location}
                         </Flex>
-                        { person.languages.length > 0 && (
-                            <Flex
-                                wrap
-                                gap="8">
+                        {person.languages.length > 0 && (
+                            <Flex wrap gap="8">
                                 {person.languages.map((language, index) => (
-                                    <Tag
+                                    <a
                                         key={index}
-                                        size="l">
-                                        {language}
-                                    </Tag>
+                                        href={`/language/cv_${language.toLocaleLowerCase()}_marchio_giuseppe.pdf`} // Modifica il percorso secondo le necessità
+                                        style={{ textDecoration: "none" }}
+                                    >
+                                        <Tag size="l">
+                                            {language}
+                                        </Tag>
+                                    </a>
                                 ))}
                             </Flex>
                         )}
