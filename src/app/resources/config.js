@@ -27,7 +27,7 @@ const effects = {
     mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
         display: true,
-        opacity: 0.4            // 0 - 1
+        opacity: 0.6            // 0 - 1
     },
     dots: {
         display: true,
@@ -41,11 +41,11 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'emerald',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'indigo',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    neutral:     'slate',         // sand | gray | slate
+    brand:       'cyan',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'blue',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast
-    solidStyle:  'flat',         // flat | plastic
+    solidStyle:  'plastic',         // flat | plastic
     border:      'playful',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
     transition:  'all'           // all | micro | macro
