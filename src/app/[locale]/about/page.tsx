@@ -127,7 +127,7 @@ export default function About(
                                 {person.languages.map((language, index) => (
                                     <Tag key={index} size="l">
                                         <Link
-                                            href={`/${locale}/about/cv_${language.toLowerCase()}_marchio_giuseppe.pdf`} // Modifica il percorso secondo le necessità
+                                            href={`/cv_${language.toLowerCase()}_marchio_giuseppe.pdf`} // Modifica il percorso secondo le necessità
                                             style={{ textDecoration: 'none' }}
                                             target="_blank" // Apre il PDF in una nuova scheda
                                             rel="noopener noreferrer" // Per sicurezza
