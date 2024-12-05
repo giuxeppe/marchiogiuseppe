@@ -4,6 +4,7 @@ import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export async function generateMetadata(
     {params: {locale}}: { params: { locale: string }}
@@ -124,15 +125,16 @@ export default function About(
                         {person.languages.length > 0 && (
                             <Flex wrap gap="8">
                                 {person.languages.map((language, index) => (
-                                    <a
-                                        key={index}
-                                        href={`/language/cv_${language.toLocaleLowerCase()}_marchio_giuseppe.pdf`} // Modifica il percorso secondo le necessità
-                                        style={{ textDecoration: "none" }}
-                                    >
-                                        <Tag size="l">
+                                    <Tag key={index} size="l">
+                                        <Link
+                                            href={`/${locale}/about/cv_${language.toLowerCase()}_marchio_giuseppe.pdf`} // Modifica il percorso secondo le necessità
+                                            style={{ textDecoration: 'none' }}
+                                            target="_blank" // Apre il PDF in una nuova scheda
+                                            rel="noopener noreferrer" // Per sicurezza
+                                        >
                                             {language}
-                                        </Tag>
-                                    </a>
+                                        </Link>
+                                  </Tag>
                                 ))}
                             </Flex>
                         )}
