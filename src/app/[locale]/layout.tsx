@@ -118,7 +118,11 @@ export default async function RootLayout({
 						fillWidth
 						minHeight="16">
 					</Flex>
-					<Header/>
+					<Header>
+						<meta 
+							name="google-site-verification"
+							content="x8yfT1re84-YhRtmVkMPo_IEyOQ3PZSWR2eZPcfdUuQ" />
+					</Header>
 					<Flex
 						zIndex={0}
 						fillWidth paddingY="l" paddingX="l"
