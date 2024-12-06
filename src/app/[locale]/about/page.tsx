@@ -122,6 +122,10 @@ export default function About(
                                 name="globe"/>
                             {person.location}
                         </Flex>
+                        <Flex
+                            alignItems="center">
+                            Visualizza il mio CV:
+                        </Flex>
                         {person.languages.length > 0 && (
                             <Flex wrap gap="8">
                                 {person.languages.map((language, index) => (
