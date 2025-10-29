@@ -6,7 +6,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Ingegnere Informatico',
+    role:      'Dott. in Ingegneria Informatica e Automatica',
     avatar:    '/images/avatar.jpg',
     location:  'Europe/Rome',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['Italian', 'English']  // optional: Leave the array empty if you don't want to display languages
@@ -58,7 +58,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Il mio sito web Portfolio che mostra il mio lavoro da ${person.role}`,
     headline: <>{person.name} - {person.role}</>,
-    subline: <>Sono Giuseppe, uno studente di Ingegneria Informatica in <InlineCode>SAPIENZA - UNIVERSITA' DI ROMA</InlineCode>.</>
+    subline: <>Laureato triennale in Ingegneria Informatica e Automatica, studente di laurea magistrale in Computer Science in <InlineCode>SAPIENZA - UNIVERSITA' DI ROMA</InlineCode>.</>
 }
 
 const about = {
@@ -79,7 +79,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduzione',
-        description: <>Sono uno studente di Ingegneria Informatica con la passione della tecnologia, del web e del mondo IT. Ho sviluppato diversi progetti scritti in linguaggi moderni.</>
+        description: <>Sono laureato in Ingegneria Informatica e Automatica e attualmente iscritto al corso di laurea magistrale in Computer Science - Informatica (svolto in lingua inglese) in Sapienza Università di Roma, con la passione della tecnologia, del web e del mondo IT. Ho sviluppato diversi progetti scritti in linguaggi moderni.</>
     },
     work: {
         display: false, // set to false to hide this section
@@ -104,7 +104,7 @@ const about = {
         institutions: [
             {
                 name: 'Università degli Studi di Roma "Sapienza"',
-                description: <>Laurea triennale in Ingegneria Informatica e Automatica - Votazione ***/110</>,
+                description: <>Laurea triennale in Ingegneria Informatica e Automatica - Votazione 100/110</>,
             },
             {
                 name: 'Istituto Tecnico Industriale "E. Scalfaro" - Catanzaro',
