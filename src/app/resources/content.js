@@ -104,6 +104,10 @@ const about = {
         institutions: [
             {
                 name: 'Università degli Studi di Roma "Sapienza"',
+                description: <>Studente magistrale in Computer Science - Votazione ---/110</>,
+            },
+            {
+                name: 'Università degli Studi di Roma "Sapienza"',
                 description: <>Laurea triennale in Ingegneria Informatica e Automatica - Votazione 100/110</>,
             },
             {

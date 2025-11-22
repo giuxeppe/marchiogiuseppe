@@ -106,7 +106,7 @@ const createI18nContent = (t) => {
                 {
                     name: 'Università degli Studi di Roma "Sapienza"',
                     description: <>Ingegneria Informatica e Automatica</>,
-                    timeframe: '2021 - Present'
+                    timeframe: '2021 - 2025'
                 }
             ]
         },
